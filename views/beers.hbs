@@ -1,0 +1,14 @@
+<h1> Listado de cervezas </h1>
+
+{{#each beersFrom}}
+    
+    <div>
+        <p>Img beer: <img src="{{this.image_url}}" alt="beer" width="100px" /> </p>
+        <p>Name beer: <a href="/each-beer/{{this.id}}">{{this.name}}</a></p>
+        {{!--
+            <p>Description beer: {{this.description}} </p>
+            <p>Tagline beer: {{this.tagline}} </p>
+        --}}
+    </div>
+    <hr>
+{{/each}}
